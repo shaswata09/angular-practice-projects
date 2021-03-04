@@ -6,10 +6,20 @@
   Add Server
 </button>
 <hr>
-<input
-  type="text"
-  class="form-control"
-  (input)="onUpdateServerName($event)" >
+<label>
+  <input
+    type="text"
+    class="form-control"
+    (input)="onUpdateServerName($event)" >
+</label>
+<hr>
+<label>
+  <input
+    type="text"
+    class="form-control"
+    [(ngModel)]="serverName" >
+</label>
+<hr>
 <p>{{ serverName }}</p>
 <hr>
 <p [innerText]="allowNewServer"></p>
