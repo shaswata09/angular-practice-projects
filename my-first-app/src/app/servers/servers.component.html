@@ -27,7 +27,10 @@
 <p>{{ allowNewServer }}</p>
 <hr />
 <!--<p>{{ serverCreationStatus }}</p>-->
-<p *ngIf="isServerCreated">New Server added. Server Name: {{ serverName }}</p>
+<p *ngIf="isServerCreated; else noServer">{{ serverCreationStatus }}</p>
+<ng-template #noServer>
+  <p>{{ serverCreationStatus }}</p>
+</ng-template>
 <hr />
 <app-server></app-server>
 <app-server></app-server>
