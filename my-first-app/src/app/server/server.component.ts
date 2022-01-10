@@ -5,9 +5,19 @@ import {Component} from '@angular/core';
   templateUrl: './server.component.html'
 })
 export class ServerComponent {
-  serverId: number = 1234;
+  serverId: number = null;
   serverStatus: string = 'online';
+
+  constructor() {
+    this.serverId = Math.floor(Math.random()*1000);
+    this.serverStatus = Math.random() > 0.5 ? 'offline' : 'online';
+  }
+
   getServerStatus(): string{
       return this.serverStatus;
+  }
+
+  getColor(): string {
+    return this.serverStatus == 'online' ? 'green' : 'red';
   }
 }
