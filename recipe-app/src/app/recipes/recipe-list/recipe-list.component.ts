@@ -11,14 +11,14 @@ export class RecipeListComponent implements OnInit {
 
   recipes: Recipe[] = [
     new Recipe(
-      'A Test Recipe',
+      'Biriani Recipe',
       'This is simply a test',
       'https://i2.wp.com/pixahive.com/wp-content/uploads/2020/10/Spicy-veg-biryani-143389-pixahive.jpg?fit=778%2C518&ssl=1'
     ),
     new Recipe(
-      'Another Test Recipe',
+      'Bharta with lefover watered rice',
       'This is simply another test',
-      'https://i2.wp.com/pixahive.com/wp-content/uploads/2020/10/Spicy-veg-biryani-143389-pixahive.jpg?fit=778%2C518&ssl=1'
+      'https://img-global.cpcdn.com/recipes/59bafe2ee84262c5/751x532cq70/bharta-with-lefover-watered-rice-panta-bhat-recipe-main-photo.jpg'
     ),
   ];
 
