@@ -52,6 +52,18 @@
       <p [appBetterHighlight]="'red'" defaultColor="yellow">
         Style me with better directive!
       </p>
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="5">Value is 5</p>
+        <p *ngSwitchCase="10">Value is 10</p>
+        <p *ngSwitchCase="5">Value is 5</p>
+        <p *ngSwitchDefault>Value is Default</p>
+      </div>
+      <div [ngSwitch]="true">
+        <p *ngSwitchCase="value % 2 === 0">{{ value }} is divisible by 2</p>
+        <p *ngSwitchCase="value % 3 === 0">{{ value }} is divisible by 3</p>
+        <p *ngSwitchCase="value % 6 === 0">{{ value }} is divisible by 6</p>
+        <p *ngSwitchDefault>Value is not divisible</p>
+      </div>
       <!-- <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'"> -->
       <!-- <ng-template [ngIf]="onlyOdd">
         <p>Only odd</p>
