@@ -6,7 +6,7 @@ import { LoggingService } from "../logging.service";
   selector: "app-new-account",
   templateUrl: "./new-account.component.html",
   styleUrls: ["./new-account.component.css"],
-  providers: [LoggingService], // If we add AccountSevice in this providers array it will create a new instance of the service for itself which is not required.
+  // providers: [LoggingService], // If we add AccountSevice in this providers array it will create a new instance of the service for itself which is not required.
 })
 export class NewAccountComponent {
   constructor(
